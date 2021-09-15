@@ -1,0 +1,10 @@
+C:\Users\ziria\source\repos\lab6.1\bin\Release\lab6.1.exe.config
+C:\Users\ziria\source\repos\lab6.1\bin\Release\lab6.1.exe
+C:\Users\ziria\source\repos\lab6.1\bin\Release\lab6.1.pdb
+C:\Users\ziria\source\repos\lab6.1\obj\Release\lab6.1.csprojAssemblyReference.cache
+C:\Users\ziria\source\repos\lab6.1\obj\Release\lab6._1.Form1.resources
+C:\Users\ziria\source\repos\lab6.1\obj\Release\lab6._1.Properties.Resources.resources
+C:\Users\ziria\source\repos\lab6.1\obj\Release\lab6.1.csproj.GenerateResource.cache
+C:\Users\ziria\source\repos\lab6.1\obj\Release\lab6.1.csproj.CoreCompileInputs.cache
+C:\Users\ziria\source\repos\lab6.1\obj\Release\lab6.1.exe
+C:\Users\ziria\source\repos\lab6.1\obj\Release\lab6.1.pdb
