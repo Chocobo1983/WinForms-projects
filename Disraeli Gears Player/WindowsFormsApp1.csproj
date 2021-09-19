@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B25C06B-FF15-4305-90CC-AFEFF9A2D3E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>Disraeli Gears Player</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CD-Music.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>77106DF57EFB962D2B0B395A938C5D3CE08AA9B7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsApp1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>WindowsFormsApp1_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Siticone.Desktop.UI, Version=2.0.8.0, Culture=neutral, PublicKeyToken=422d444a8a9fa6db, processorArchitecture=MSIL">
+      <HintPath>packages\Siticone.Desktop.UI.2.0.8\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="taglib-sharp, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\taglib-sharp-netstandard2.0.2.1.0\lib\netstandard2.0\taglib-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WindowsFormsApp1_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_eject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_eject %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_end.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_add_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorites_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_add_minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\controls_chapter_previous_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous track.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next track.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rewind_green_end.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast backward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-media-next-rtl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-media-next-rtl %28green%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-media-play-ltr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-media-pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-media-stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-media-next-rtl %2840x40%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-media-play-ltr %2840x40%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-media-pause %2840x40%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-media-stop %2840x40%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-media-forward-ltr%2840x40%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-media-next-ltr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll down%2830x30%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\designbump_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows_restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_close_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome-dev-disc-dvdr-plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblem-noread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-save %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-save %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3floppy_unmount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dvd_unmount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome-dev-disc-dvdr-plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-drag-accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gnome-View-Refresh-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disraeli_gears_player_phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-close%2820x20%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gtk-close %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bottom %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblem-downloads %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disraeli_gears_player_phone_copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mid_img.png" />
+    <None Include="Resources\high_img.png" />
+    <None Include="Resources\down_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mute_img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CD-Music.ico" />
+    <None Include="Resources\clear.png" />
+    <None Include="Resources\git.jpg" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\stock_new-window.png" />
+    <None Include="Resources\bottom %282%29.png" />
+    <None Include="Resources\shuffle_on.png" />
+    <None Include="Resources\shuffle_off.png" />
+    <None Include="Resources\media-shuffle.png" />
+    <None Include="Resources\media-shuffle %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
